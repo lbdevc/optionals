@@ -14,6 +14,7 @@ extern "C" {
 
 
 #include <stdlib.h>
+#include <stdint.h>
 
 typedef enum {
 	none, some
