@@ -34,9 +34,12 @@ You can create an optional using the Optional##T type, where ##T : typename.
 OptionalCustomStruct myOptional;
 ```
 
-Initialize the optional with either:
+Given we typedef'd struct CustomStruct, initialize the optional with either:
 
 ```c
+typedef struct {} CustomStruct;
+OPTIONALS_USE(CustomStruct)
+
 OptionalCustomStruct myOptional = makeOptionalCustomStruct(); // Optional is nil
 ```
 
